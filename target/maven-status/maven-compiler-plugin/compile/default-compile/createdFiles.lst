@@ -1,0 +1,8 @@
+anaysahaiqa\pageObjects\ConfirmationPage.class
+anaysahaiqa\AbstractComponents\AbstractComponents.class
+anaysahaiqa\pageObjects\LandingPage.class
+anaysahaiqa\pageObjects\ProductCatalogue.class
+anaysahaiqa\pageObjects\CheckoutPage.class
+anaysahaiqa\pageObjects\CartPage.class
+anaysahaiqa\resources\ExtentReportsNG.class
+anaysahaiqa\pageObjects\OrderPage.class

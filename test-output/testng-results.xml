@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="6" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-26T15:26:46 IST" name="Suite" finished-at="2025-07-26T15:27:16 IST" duration-ms="29558">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidations.loginErrorValidation()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" name="loginErrorValidation" class="anaysahaiqa.ErrorValidations"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="POMFrameworkDesign.submitOrder(java.util.HashMap)[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" name="submitOrder" class="anaysahaiqa.POMFrameworkDesign"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-07-26T15:26:46 IST" name="Error Validations Test" finished-at="2025-07-26T15:26:58 IST" duration-ms="11868">
+      <class name="anaysahaiqa.ErrorValidations">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:46 IST" name="LaunchApplication" finished-at="2025-07-26T15:26:50 IST" duration-ms="4159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:50 IST" name="loginErrorValidation" finished-at="2025-07-26T15:26:51 IST" duration-ms="386" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at anaysahaiqa.ErrorValidations.loginErrorValidation(ErrorValidations.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:51 IST" name="teardown" finished-at="2025-07-26T15:26:51 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:51 IST" name="LaunchApplication" finished-at="2025-07-26T15:26:53 IST" duration-ms="2157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:53 IST" name="loginErrorValidation" finished-at="2025-07-26T15:26:53 IST" duration-ms="340" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at anaysahaiqa.ErrorValidations.loginErrorValidation(ErrorValidations.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:54 IST" name="teardown" finished-at="2025-07-26T15:26:54 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:54 IST" name="LaunchApplication" finished-at="2025-07-26T15:26:56 IST" duration-ms="2235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:56 IST" name="productErrorValidation" finished-at="2025-07-26T15:26:58 IST" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:anaysahaiqa.ErrorValidations@1df8b5b8]" started-at="2025-07-26T15:26:58 IST" name="teardown" finished-at="2025-07-26T15:26:58 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- anaysahaiqa.ErrorValidations -->
+    </test> <!-- Error Validations Test -->
+    <test started-at="2025-07-26T15:26:46 IST" name="Submit Order Test" finished-at="2025-07-26T15:27:16 IST" duration-ms="29558">
+      <class name="anaysahaiqa.POMFrameworkDesign">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:26:46 IST" name="LaunchApplication" finished-at="2025-07-26T15:26:50 IST" duration-ms="3767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:26:50 IST" name="submitOrder" data-provider="getData" finished-at="2025-07-26T15:27:00 IST" duration-ms="9669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Abcd1234!, product=ZARA COAT 3, email=test@anay.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:27:00 IST" name="teardown" finished-at="2025-07-26T15:27:00 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:27:00 IST" name="LaunchApplication" finished-at="2025-07-26T15:27:02 IST" duration-ms="2134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:27:02 IST" name="submitOrder" data-provider="getData" finished-at="2025-07-26T15:27:13 IST" duration-ms="10646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Abcd@1234, product=ADIDAS ORIGINAL, email=anay@test.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:27:13 IST" name="teardown" finished-at="2025-07-26T15:27:13 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:27:13 IST" name="LaunchApplication" finished-at="2025-07-26T15:27:15 IST" duration-ms="2335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="orderHistory()[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:27:15 IST" name="orderHistory" finished-at="2025-07-26T15:27:16 IST" depends-on-methods="anaysahaiqa.POMFrameworkDesign.submitOrder" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:anaysahaiqa.POMFrameworkDesign@e3b3b2f]" started-at="2025-07-26T15:27:16 IST" name="teardown" finished-at="2025-07-26T15:27:16 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- anaysahaiqa.POMFrameworkDesign -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
