@@ -48,9 +48,7 @@ public class BaseTest {
 
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream(
-                System.getProperty("user.dir") +
-                "\\src\\main\\java\\anaysahaiqa\\resources\\GlobalData.properties"
-        );
+                System.getProperty("C:\\Users\\sahai\\eclipse-workspace\\SeleniumFrameworkDesign\\src\\main\\java\\anaysahaiqa\\resources\\GlobalData.properties"));
         prop.load(fis);
 
         String browserName = prop.getProperty("browser");
