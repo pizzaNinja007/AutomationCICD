@@ -46,28 +46,8 @@ public class BaseTest {
      */
     public WebDriver initializeDriver() throws IOException {
 
-        Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream(
-                System.getProperty("C:\\Users\\sahai\\eclipse-workspace\\SeleniumFrameworkDesign\\src\\main\\java\\anaysahaiqa\\resources\\GlobalData.properties"));
-        prop.load(fis);
-
-        String browserName = prop.getProperty("browserName");
-
-        if (browserName.equalsIgnoreCase("chrome")) {
+        
             driver = new ChromeDriver();
-        }
-        else if (browserName.equalsIgnoreCase("chromeheadless")) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("headless");
-            driver = new ChromeDriver(options);
-            driver.manage().window().setSize(new Dimension(1440, 900));
-        }
-        else if (browserName.equalsIgnoreCase("edge")) {
-            driver = new EdgeDriver();
-        }
-        else if (browserName.equalsIgnoreCase("firefox")) {
-            driver = new FirefoxDriver();
-        }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
