@@ -51,7 +51,7 @@ public class BaseTest {
                 System.getProperty("C:\\Users\\sahai\\eclipse-workspace\\SeleniumFrameworkDesign\\src\\main\\java\\anaysahaiqa\\resources\\GlobalData.properties"));
         prop.load(fis);
 
-        String browserName = prop.getProperty("browser");
+        String browserName = prop.getProperty("browserName");
 
         if (browserName.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
