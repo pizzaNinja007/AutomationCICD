@@ -61,7 +61,7 @@ public class POMFrameworkDesign extends BaseTest {
 
 		// Product selection and cart operations
 		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
-		List<WebElement> products = productCatalogue.getproductsList();
+		List<WebElement> products = productCatalogue.getProductsList();
 		productCatalogue.addProductToCart(input.get("product"));
 		productCatalogue.goToCartPage();
 
@@ -72,7 +72,7 @@ public class POMFrameworkDesign extends BaseTest {
 
 		// Checkout and order confirmation
 		CheckoutPage checkoutPage = cart.goToCheckout();
-		checkoutPage.selectCounry();
+		checkoutPage.selectCountry();
 		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
 		String confirmMessage = confirmationPage.verifyConfirmationMessage();
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));

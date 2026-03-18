@@ -57,7 +57,7 @@ public class StepDefinitionimpl extends BaseTest {
      */
     @When("^I add product (.+) to cart$")
     public void i_add_product_to_cart(String productName) {
-        List<WebElement> products = productCatalogue.getproductsList();
+        List<WebElement> products = productCatalogue.getProductsList();
         productCatalogue.addProductToCart(productName);
     }
 
@@ -79,7 +79,7 @@ public class StepDefinitionimpl extends BaseTest {
 
         // Proceed to checkout and submit order
         CheckoutPage checkoutPage = cart.goToCheckout();
-        checkoutPage.selectCounry();
+        checkoutPage.selectCountry();
         confirmationPage = checkoutPage.submitOrder();
     }
 
